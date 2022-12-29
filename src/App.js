@@ -38,7 +38,6 @@ const App = () => {
   });
 
   const btnClickHandler = (e, btn) => {
-    console.log(`${btn} is clicked`);
     btn === "/" || btn === "x" || btn === "-" || btn === "+"
       ? signClickHandler(e)
       : btn === "AC"
