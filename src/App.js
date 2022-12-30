@@ -38,7 +38,7 @@ const App = () => {
   });
 
   const btnClickHandler = (e, btn) => {
-    btn === "/" || btn === "x" || btn === "-" || btn === "+"
+    return btn === "/" || btn === "x" || btn === "-" || btn === "+"
       ? signClickHandler(e)
       : btn === "AC"
       ? resetClickHandler(e)
@@ -57,7 +57,7 @@ const App = () => {
     e.preventDefault();
     const value = e.target.innerHTML;
 
-    if (removeSpaces(calculation.number).length < 16) {
+    if (removeSpaces(calculation.number).length < 14) {
       setCalculation({
         ...calculation,
         number:
