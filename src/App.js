@@ -108,12 +108,11 @@ const App = () => {
           : sign === "x"
           ? a * b
           : a / b;
-      console.log("calc--", calculation);
       setCalculation({
         ...calculation,
         result:
           calculation.number === "0" && calculation.sign === "/"
-            ? "Can't divide with 0"
+            ? "err"
             : math(
                 Number(removeSpaces(calculation.result)),
                 Number(removeSpaces(calculation.number)),

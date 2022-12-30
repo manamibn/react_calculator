@@ -6,10 +6,14 @@
   border-radius: 20px 20px 0px 0px;
   color: #ede4d7;
   display: flex;
+}
+
+.innerDiv {
+  width: 92%;
+  display: flex;
   align-items: flex-end;
   justify-content: flex-end;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 5rem;
   font-weight: lighter;
-  /* box-sizing: border-box; */
 }
